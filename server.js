@@ -9,7 +9,7 @@ app.listen(port);
 var race = require ('./lib/modules/race')
 race.createRace(app);
 
-console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+//console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 
 process.on('SIGINT', function () {
 	app.close();

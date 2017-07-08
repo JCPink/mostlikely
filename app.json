@@ -3,4 +3,5 @@
 "description": "Play most-likely game for couple",
 "repository": "https://github.com/for-hope/mostlikely.git",
 "keywords":["node", "express","static"],
+"logo":"https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
 }

@@ -52,12 +52,12 @@
         $('input.input_player').val('').select(); //reset and select.
       });
 
-      socket.on('history',function(history) {
+     /* socket.on('history',function(history) {
         for (var i = 0, l = history.length; i < l ;  i++) { //sort eath item by score
           sort(history[i].scores, 'score', true)
         }
         race.history(sort(history, 'timestamp', true)); //bind score history (and sort by date)
-      });
+      });*/
           
       socket.on('scores',function(scores) {
         race.scores(sort(scores,'score', true));
@@ -69,9 +69,9 @@
         }
       });
 
-      socket.on('hall_of_fame',function(hall_of_fame) {
+   /*   socket.on('hall_of_fame',function(hall_of_fame) {
         race.hall_of_fame(sort(hall_of_fame,'score', true));
-      });
+      });*/
 
       socket.on('new_game',function(scores) {
 	      if(scores == null) {

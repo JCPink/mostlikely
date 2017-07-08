@@ -3,10 +3,10 @@ var getApp = function (config) {
 	var app = module.exports = express.createServer();
 
 	//middleware
-	function local_env (req, res, next){
+	/*function local_env (req, res, next){
 		res.local('real_time_server', config.server.production.real_time_server)
 		next();
-	}
+	}*/
 
 	app.configure(function(){
 		app.set('views', __dirname + '/views');

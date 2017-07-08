@@ -2,7 +2,7 @@ var config = require ('./config').values
 
 var app = require ('./app').getApp(config)
 
-var port = parseInt(process.argv[2], 10) || 8080
+var port =  process.env.PORT || 8080;
 app.listen(port);
 
 //create handler for socket.io

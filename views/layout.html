@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.amelia.min.css' />
+     <link rel="stylesheet" href="/stylesheets/style.css">
+	<script src="/javascripts/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <style>
+buttn {
+position:relative;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-shadow: 2px 1px 3px #424242;
+	webkit-box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+
+
+}
+
+
+.button1 {
+position:relative;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-shadow: 2px 1px 3px #424242;
+	webkit-box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+         background-color:#84DCF2;
+		 border-radius: 2px;
+         font-size: 32px;
+		 width: 46rem;
+		 height:20rem;
+		 opacity:0.8;
+		 }
+.button2 {
+position:relative;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-shadow: 2px 1px 3px #424242;
+	webkit-box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+         background-color: #f24141;
+         border-radius: 2px;
+         font-size: 32px;
+		 width: 46rem;
+		 height:20rem;
+		 opacity:0.8;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+.buttn:hover {
+opacity:1;}
+
+.buttn:active {
+  opacity:0.9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.modal-header-success {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #5cb85c;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+</style>
+  <body>	
+		
+	<div class="navbar">
+	  <div class="navbar-inner" style="background-color:rgba(54, 25, 25, .00004); background-image:none;">
+	    <div class="container-fluid">
+			<ul class="nav" >
+			  <li class="active" style="background-color:rgba(54, 25, 25, .00004); padding:20px;>
+			    <a href="#">MostLikely <span id="socketio"></span></a> 
+			  </li>
+			</ul>
+	    </div>
+	  </div>
+	</div>
+
+    <div class="container-fluid">	
+
+
+	<%- body %>
+
+	<footer>
+		lulaaaa: <a href="jeff">boi</a>
+
+	</footer>
+	<script>
+	var user_id = Math.random();
+	var real_time_server = {host: '<%=real_time_server.host %>', port:<%=real_time_server.port %>};
+	</script>
+	<script src="http://<%=real_time_server.host %>:<%=real_time_server.port %>/socket.io/socket.io.js" type="text/javascript" charset="utf-8"></script>		
+
+	<script src="/javascripts/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/javascripts/knockout-2.0.0.js" type="text/javascript" charset="utf-8"></script>
+	</div>
+
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-300651-38']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+  </body>
+</html>

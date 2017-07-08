@@ -17,7 +17,7 @@ var getApp = function () {
 		app.use(express.methodOverride());
 		app.use(express.cookieParser());
 				
-		app.use(local_env);
+		//app.use(local_env);
 		app.use(app.router);
 		
 		var oneYear = 31557600000;

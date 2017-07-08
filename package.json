@@ -7,7 +7,7 @@
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/iloire/math-race"
+		"url": "https://github.com/for-hope/mostlikely"
 	},
 	"scripts": {
 		"start": "node server"

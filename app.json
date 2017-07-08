@@ -1,0 +1,6 @@
+{
+"name": "MostLikely Game",
+"description": "Play most-likely game for couple",
+"repository": "https://github.com/for-hope/mostlikely.git",
+"keywords":["node", "express","static"],
+}

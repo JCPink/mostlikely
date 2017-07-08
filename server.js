@@ -3,7 +3,7 @@ var config = require ('./config').values
 var app = require ('./app').getApp(config)
 
 var port = parseInt(process.argv[2], 10) || 80
-app.listen(port,"41.200.164.14");
+app.listen(port);
 
 //create handler for socket.io
 var race = require ('./lib/modules/race')

@@ -1,6 +1,6 @@
 //var config = require ('./config').values
 
-var app = require ('./app').getApp(config)
+var app = require ('./app').getApp()
 
 var port =  process.env.PORT || 8080;
 app.listen(port);

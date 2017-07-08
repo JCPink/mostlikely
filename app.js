@@ -1,4 +1,4 @@
-var getApp = function (config) {
+var getApp = function () {
 	var express = require('express');
 	var app = module.exports = express.createServer();
 

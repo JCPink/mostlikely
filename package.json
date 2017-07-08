@@ -10,7 +10,7 @@
 		"url": "https://github.com/for-hope/mostlikely"
 	},
 	"scripts": {
-		"start": "node server"
+		"start": "node server.js"
 	},
 	"dependencies": {
 		"express": "2.5.0",

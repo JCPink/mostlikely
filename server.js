@@ -1,4 +1,4 @@
-var config = require ('./config').values
+//var config = require ('./config').values
 
 var app = require ('./app').getApp(config)
 
